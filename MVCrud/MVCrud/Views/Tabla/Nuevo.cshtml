@@ -1,0 +1,30 @@
+﻿@model MVCrud.Models.ViewModels.TablaViewModel
+@{
+    ViewBag.Title = "Nuevo";
+}
+
+<h2>Nuevo</h2>
+
+@using (Html.BeginForm("Nuevo","Tabla", FormMethod.Post)) {
+<div class="row">
+    <div class="col-md-12">
+        <div>
+            @Html.LabelFor(d => d.Nombre)
+            @Html.TextBoxFor(d => d.Nombre, "", new { @class = "form-cotrol" })<br />
+        </div>
+
+        <div>
+            @Html.LabelFor(d => d.Correo)
+            @Html.TextBoxFor(d => d.Correo, "", new { @class = "form-cotrol" })<br />
+        </div>
+        <div>
+            @Html.LabelFor(d => d.Fecha_nacimiento)
+            @Html.TextBoxFor(d => d.Fecha_nacimiento, "", new { @class = "form-cotrol" }) <br />
+        </div>
+        <div style="text-align: right;">
+            <input value="Guardar" class="btn btn-primary" type="submit"/>
+        </div>
+    </div>
+</div>
+
+}
