@@ -19,11 +19,11 @@ namespace Vidly
 
             routes.MapMvcAttributeRoutes();
 
-            routes.MapRoute(
+            /*routes.MapRoute(
                 name: "Customer",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Customers", action = "Index", id = UrlParameter.Optional }
-            );
+            );*/
             /*routes.MapRoute(
                 "MoviesByReleaseDate",
                 "movies/released/{year}/{month}",
