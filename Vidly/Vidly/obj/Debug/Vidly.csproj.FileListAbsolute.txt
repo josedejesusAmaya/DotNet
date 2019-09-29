@@ -180,3 +180,11 @@ C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.csproj.CoreCompile
 C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.csproj.CopyComplete
 C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.dll
 C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.pdb
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\bin\EntityFramework.dll
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\bin\EntityFramework.SqlServer.dll
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\bin\EntityFramework.xml
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\bin\EntityFramework.SqlServer.xml
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddIsSuscribedToCustomer.resources
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.csproj.GenerateResource.cache
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.Migrations.AddMembershipType.resources
+C:\Users\Pepe AG\Documents\DotNet\Vidly\Vidly\obj\Debug\Vidly.Migrations.PopulateMembershipTypes.resources

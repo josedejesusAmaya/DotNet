@@ -4,32 +4,34 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Vidly.Models;
+using System.Data.Entity;
 
 namespace Vidly.Controllers
 {
     public class CustomersController : Controller
     {
-        // GET: Customers
-        public ActionResult Index()
-        {
-            var customers = GetCustomer();
+        private VidlyContext _context;
 
-            //var customer = new Customer() { Id = 1, Name = "Pepe Amaya" };
-            return View(customers);
+        public CustomersController()
+        {
+            _context = new VidlyContext();
         }
 
-        public IEnumerable<Customer> GetCustomer()
+        protected override void Dispose(bool disposing)
         {
-            return new List<Customer>
-            {
-                new Customer() { Id = 1, Name = "Pepe Amaya"},
-                new Customer() { Id = 2, Name = "Emiliano Amaya"}
-            };
+            _context.Dispose();    
+        }
+
+        // GET: Customers   
+        public ActionResult Index()
+        {
+            var customers = _context.Customers.Include(c => c.MembershipType).ToList();
+            return View(customers);
         }
 
         public ActionResult Details(int id)
         {
-            var customer = GetCustomer().SingleOrDefault(c => c.Id == id);
+            var customer = _context.Customers.SingleOrDefault(c => c.Id == id);
             if (customer == null)
                 return HttpNotFound();
             return View(customer);
